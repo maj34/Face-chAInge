@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+        <link rel="stylesheet" href="../static/css/result.css">
+        <h1 style="display: inline;">Face chAInge</h1>&nbsp&nbsp&nbsp 사진 속 배경인물 얼굴 변경
+        <button id="home" onclick="location.href = '/index'">
+            <img src="https://cdn-icons-png.flaticon.com/512/660/660026.png" width="30">
+        </button>
+    </head>
+
+    <body bgcolor="#E0E0E0" onload="draw('{{ img_path }}');" >
+
+        <hr>
+        <h2 style="text-align: center;">최종 결과 및 이미지 다운로드</h2>
+        <br>
+
+        <div class="image">
+            <div class="image-box">
+                <canvas id="canvas" width="800" height="650">
+                </canvas>
+            </div>
+        </div>
+        <br>
+        <br>
+        <a download href='{{ img_path }}' class="download-btn">Download</a>
+    </body>
+</html>

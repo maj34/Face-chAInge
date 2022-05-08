@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+         <script src="../static/js/index.js"></script>
+         <link rel="stylesheet" href="../static/css/index.css">
+         <h1 style="display: inline;">Face chAInge</h1>&nbsp&nbsp&nbsp 사진 속 배경인물 얼굴 변경
+         <button id="home" onclick="location.href = '/index'">
+            <img src="https://cdn-icons-png.flaticon.com/512/660/660026.png" width="30">
+        </button>
+    </head>    
+
+    <body bgcolor="#E0E0E0">
+
+        <hr>
+        <h2 style="text-align: center;">변경할 이미지 선택</h2>
+        <br>
+
+        <div class="container">
+
+            <div class="image">
+                <div class="image-box">
+                    <canvas id="canvas" width="800" height="650">
+                    </canvas>
+                </div>
+            </div>
+
+            <div class="image-upload" id="image-upload">
+                <form action="imageupload" method="POST" enctype="multipart/form-data">
+                    <div class="fileContainer">
+                        <div class="fileInput">
+                            <p>FILE NAME: </p>
+                            <p id="fileName"></p>
+                        </div>
+                            <button class="submitButton" id="submitButton">SUBMIT</button>
+                    </div>
+
+                    <input type="file" name="file" id="chooseFile" onchange="loadFile(this)">
+
+                    <div id="button" class="button">
+                        <label for="chooseFile">
+                            👉 SELECT IMAGE! 👈
+                        </label>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+
+
+        
+    </body>
+</html>

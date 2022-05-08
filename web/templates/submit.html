@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/loadingoverlay.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/submit.js') }}"></script>
+        <link rel="stylesheet" href="../static/css/submit.css">
+        <h1 style="display: inline;">Face chAInge</h1>&nbsp&nbsp&nbsp 사진 속 배경인물 얼굴 변경
+        <button id="home" onclick="location.href = '/index'">
+          <img src="https://cdn-icons-png.flaticon.com/512/660/660026.png" width="30">
+        </button>
+    </head>
+
+    <body bgcolor="#E0E0E0" onload="load(this, '{{ image_name }}' ,'{{ data }}');" onclick="clickCanvas(window.event)">
+
+        <hr>
+        <h2 style="text-align: center;">변경할 인물 선택</h2>
+        <br>
+
+        <div class="image">
+          <div class="image-box">
+            <canvas id="canvas" width="800" height="600">
+            </canvas>
+          </div>
+        </div>
+    
+        <br>
+        <br>
+
+        <button class = "submitButton" onclick="doFunction('{{ image_name }}')">
+          SUBMIT
+        </button>
+
+  
+
+    </body>
+</html>

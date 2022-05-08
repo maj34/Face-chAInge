@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 30px;
+}
+
+#home {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    height: 0%;
+    flex-direction: column;
+}
+
+.image-upload {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -410px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+label {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#chooseFile {
+    visibility: hidden;
+}
+
+.fileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.fileInput {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+    width: 50%;
+    height: 30px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.image {
+    z-index: -1;
+    position: relative;
+    height: 600px;
+    /* top: 120px; */
+    text-align: center;
+}
+
+.image-box {
+    display: inline-block;
+    z-index: -1;
+    height: 600px;
+    width: 1200px;
+    /* background-color: thistle;
+    border: 2px solid rgb(139, 27, 139); */
+    background-color: rgb(160, 160, 160);
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+#canvas {
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+#fileName {
+    margin-left: 5px;
+}
+
+.submitButton {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.8em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    cursor: pointer;
+}
